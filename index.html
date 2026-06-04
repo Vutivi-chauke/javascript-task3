@@ -1,1 +1,78 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>error handling</title>
+
+	<style>
+
+		body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: sans-serif;
+		
+		}
+
+		form{
+			height: 30px;
+			width: 200px;
+		}
+
+		input {
+			height: 30px;
+			width: 200px;
+		
+		}
+
+		label{
+			height: 30px;
+			width: 200px;
+			
+		}
+
+		button{
+			height: 30px;
+			width: 200px;
+		}
+
+		span{
+			color : red;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>SignUp Portal</h1>
+
+<form id="signupForm">
+    <label>Username</label>
+    <input type="text" id="username">
+    <span id="usernameError"></span><br>
+
+    <label>Email</label>
+    <input type="email" id="email">
+    <span id="emailError"></span><br>
+
+    <label>Password</label>
+    <input type="password" id="password">
+    <span id="passwordError"></span><br>
+
+    <div>
+        <input type="checkbox" id="terms">
+        <label for="terms">Terms and Conditions</label>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+	<p id="errorMessage"></p>
+
+	<script src="script.js">
+
+	</script>
+
+</body>
+</html>
